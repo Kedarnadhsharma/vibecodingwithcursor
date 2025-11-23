@@ -6,6 +6,11 @@
 .pnp.js
 .yarn/install-state.gz
 
+# yarn
+yarn-error.log
+.yarn-integrity
+.pnp.*
+
 # testing
 /coverage
 /playwright-report
