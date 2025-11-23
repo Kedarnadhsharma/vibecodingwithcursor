@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import SessionProvider from './providers/SessionProvider';
 
 export const metadata: Metadata = {
   title: 'Vibe Coding Starter',
@@ -13,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SessionProvider>
+          {children}
+        </SessionProvider>
+      </body>
     </html>
   );
 }
